@@ -8,14 +8,17 @@ fobj.close()
 #read()
 poem = open("little_poem.txt").read()
 print(poem[4:7])
+poem.close()
 
 #readlines()
 poem = open("little_poem.txt").readlines()
 print(poem)
+poem.close()
 
 #In einer Datei schreiben: .write()
 fo = open("foo.txt", "wb")
 fo.write( "Python is a great language.\nYeah its great!!\n")
+fo.close()
 
 #with-Anweisung verwenden
 with open("example.txt", "w") as fh:
