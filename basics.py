@@ -1,27 +1,27 @@
 #Text aus einer Datei lesen
 #open(filename,mode) and .close()
-fobj = open("yellow_snow.txt", "r") 
+fobj = open("poem.txt", "r") 
 for line in fobj:
     print(line.rstrip())
 fobj.close()
 
 #read()
-poem = open("little_poem.txt").read()
+poem = open("poem.txt").read()
 print(poem[4:7])
 poem.close()
 
 #readlines()
-poem = open("little_poem.txt").readlines()
+poem = open("poem.txt").readlines()
 print(poem)
 poem.close()
 
 #In einer Datei schreiben: .write()
-fo = open("foo.txt", "wb")
+fo = open("poem.txt", "wb")
 fo.write( "Python is a great language.\nYeah its great!!\n")
 fo.close()
 
 #with-Anweisung verwenden
-with open("example.txt", "w") as fh:
+with open("poem.txt", "w") as fh:
 	fh.write("To write or not to write\nthat is the question!\n")
 
 #Ausgabe mit .format() in print() formatieren
